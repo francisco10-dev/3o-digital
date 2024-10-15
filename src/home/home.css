@@ -1,0 +1,210 @@
+
+body {
+    font-family: "Maven Pro", 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FFA500, #4169E1, #FFC0CB, #8A2BE2);
+    color: white;
+    line-height: 1.6;
+}
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    nav {
+      position: fixed;
+      top: 0;
+      right: 1px;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin: 20px 0;
+    }
+  
+    .contact-form {
+      width: auto;
+    }
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 80px;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    color: #FFA500;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  .hero-title {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(18px, 3vw, 24px);
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+  
+  .feature {
+    flex: 1 1 300px;
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+  }
+  
+  .feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    height: 100px;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    outline: none;
+  }
+  
+  .submit-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #FFA500;
+  }
+  
+  footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
